@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+<input type="number" value="0" max="30" min="7" id="BBreite"/>
+<input type="number" value="0" max="30" min="7" id="BHoehe"/>
+<input type="button" value="check" onClick="check5()"/><br/>
+<input type="text" id="outp5" readonly="readonly"/>
+<script>
+  function check5() {
+      var input1 = document.getElementById("BBreite").value;
+      var input2 = document.getElementById("BHoehe").value;
+      var output = "unbekannt!";
+      if (input1 <= 11 && input2 <= 18)
+      { output = "eak"; }
+      if (input1 <= 11 && input2 > 18)
+      { output = "oak"; }
+      if (input1 <= 8 && input2 <= 17.5)
+      { output = "egk"; }
+      if (input1 <= 8 && input2 > 17.5)
+      { output = "ogk"; }
+      document.getElementById("outp5").value = output;
+console.log(output);
+//Posico is a combination of Position and Colour
+var Posico = output;
+console.log(Posico);
+
+  }
+
+</script>
+</body>
+</html>
