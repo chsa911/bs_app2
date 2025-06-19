@@ -24,8 +24,22 @@ console.log(output);
 //Posico is a combination of Position and Colour
 var Posico = output;
 console.log(Posico);
+      var input1 = document.querySelector("BBreite");
+      var input2 = document.querySelector("BHoehe");
+      button.addEventListener("click,() =>{
+      var obj=
+            BBreite:input1.value,
+            BHoehe:input2.value,
+};
+fetch ("/contact",{
+    method:"POST",
+    headers:{
+    "content-type":"application/json"
+    },
+    body:JSON.stringify(obj)
+})
+}
 
-  }
 
 </script>
 </body>
