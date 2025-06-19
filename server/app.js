@@ -1,14 +1,14 @@
 const express = require('express');
+const cors = require('cors');
 const connectDB = require('./config/db');
 const books = require('./models/books');
 const app = express();
 let MongoClient = require('mongodb').MongoClient;
 const corsOptions = {
-origin: {   "http.localhost://5173"},
+origin: ["http.localhost://1975"],
 };
 app.use(cors(corsOptions));
 
-}
 //let url = "mongodb://localhost:27017/";
 // Connect Database
 connectDB();
