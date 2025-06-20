@@ -27,7 +27,7 @@ console.log(Posico);
       var input1 = document.querySelector("BBreite");
       var input2 = document.querySelector("BHoehe");
       button.addEventListener("click,() =>{
-      var obj=
+      var obj= {
             BBreite:input1.value,
             BHoehe:input2.value,
 };
@@ -37,8 +37,8 @@ fetch ("/contact",{
     "content-type":"application/json"
     },
     body:JSON.stringify(obj)
-})
-}
+});
+};
 
 
 </script>
